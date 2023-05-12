@@ -86,6 +86,17 @@
                 "description": "Enter Azure Subscription Id which is present in the subscription tab in Microsoft Sentinel."
             }
         },
+        "RequireProxy": {
+            "type": "string",
+            "metadata": {
+                "description": "Select Yes If you want to sent Cofesne indicators to the Threat Intelligence Indicator with the help of Proxy. Default No is selected."
+            },
+            "allowedValues": [
+                "Yes",
+                "No"
+            ],
+            "defaultValue": "No"
+        },
         "Proxy_Username": {
             "type": "string",
             "defaultValue": "",
@@ -288,6 +299,7 @@
                         "Azure_Resource_Group_Name": "[parameters('Azure_Resource_Group_Name')]",
                         "Azure_Workspace_Name": "[parameters('Azure_Workspace_Name')]",
                         "Azure_Subscription_Id": "[parameters('Azure_Subscription_Id')]",
+                        "RequireProxy": "[parameters('RequireProxy')]",
                         "Proxy_Username": "[parameters('Proxy_Username')]",
                         "Proxy_Password": "[parameters('Proxy_Password')]",
                         "Proxy_URL": "[parameters('Proxy_URL')]",
@@ -296,7 +308,7 @@
                         "Malware_Data_Table_name": "[parameters('Malware_Data_Table_name')]",
                         "Schedule": "[parameters('Schedule')]",
                         "LogLevel": "[parameters('LogLevel')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/blob/main/DataConnector-CofenseIntelligence-ms-sentinel-D-1.0.0-13.zip?raw=true"
+                        "WEBSITE_RUN_FROM_PACKAGE": "<--Provide Zip File Path-->"
                     }
                 }
             ]
