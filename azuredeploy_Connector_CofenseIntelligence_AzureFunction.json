@@ -138,7 +138,7 @@
         "LogLevel": {
             "type": "string",
             "metadata": {
-                "description": "Debug, Info, Error, Warning"
+                "description": "Please add log level or log severity value. By default it is set to INFO"
             },
             "allowedValues": [
                 "Debug",
@@ -156,7 +156,7 @@
             "type": "string",
             "minLength": 11,
             "metadata": {
-                "description": "Enter a valid Quartz cron-expression(Example: 0 0 0 * * *)"
+                "description": "Please enter a valid Quartz cron-expression. (Example: 0 0 0 * * *)"
             }
         }
     },
@@ -306,7 +306,7 @@
                         "Malware_Data_Table_name": "[parameters('Malware_Data_Table_name')]",
                         "Schedule": "[parameters('Schedule')]",
                         "LogLevel": "[parameters('LogLevel')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/blob/main/DataConnector-CofenseIntelligence-ms-sentinel-D-1.0.0-21.zip?raw=true"
+                        "WEBSITE_RUN_FROM_PACKAGE": "<--Provide Zip File Path-->"
                     }
                 }
             ]
