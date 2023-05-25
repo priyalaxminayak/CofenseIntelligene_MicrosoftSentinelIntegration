@@ -239,7 +239,7 @@
             "type": 3,
             "content": {
               "version": "KqlItem/1.0",
-              "query": "ThreatIntelligenceIndicator\r\n| where Tags != \"\"\r\n| parse Tags with * \"[\\\"threatID-\" threat_id \"\\\"]\"\r\n| extend threat_id = toreal(threat_id)\r\n| join kind=inner Malware_Data_CL on $left.threat_id == $right.id_d\r\n// latest data of cofense indicator to avoid duplicates \r\n| summarize arg_max(TimeGenerated,*) by ExternalIndicatorId\r\n| extend Ioc = case(ThreatType == \"File\", FileHashValue, \r\n                    ThreatType == \"URL\", Url,\r\n                       DomainName)\r\n| order by TimeGenerated desc\r\n| project [\"Threat ID\"]=threat_id, [\"Confidence Score\"]=ConfidenceScore, [\"Threat Type\"]=ThreatType, Ioc, Label=label_s, [\"Last Published\"]=unixtime_microseconds_todatetime(lastPublished_d*1000), [\"First Published\"]=unixtime_microseconds_todatetime(firstPublished_d*1000), [\"Threat Detail URL\"]=threatDetailURL_s, [\"Download Report (HTML)\"]=ReportDownload_HTML__s, [\"Download Report (PDF)\"]=ReportDownload_PDF__s, [\"Executive Summary\"]=executiveSummary_s",
+              "query": "ThreatIntelligenceIndicator\r\n| where Tags != \"\"\r\n| parse Tags with * \"[\\\"threatID-\" threat_id \"\\\"]\"\r\n| extend threat_id = toreal(threat_id)\r\n| join kind=inner Malware_Data_CL on $left.threat_id == $right.id_d\r\n// latest data of cofense indicator to avoid duplicates \r\n| summarize arg_max(TimeGenerated,*) by ExternalIndicatorId\r\n| extend Ioc = case(ThreatType == \"File\", FileHashValue, \r\n                    ThreatType == \"URL\", Url,\r\n                       DomainName)\r\n| order by TimeGenerated desc\r\n| project [\"Threat ID\"]=threat_id, [\"Confidence Score\"]=ConfidenceScore, [\"Threat Type\"]=ThreatType, [\"IOC\"]=Ioc, Label=label_s, [\"Last Published\"]=unixtime_microseconds_todatetime(lastPublished_d*1000), [\"First Published\"]=unixtime_microseconds_todatetime(firstPublished_d*1000), [\"Threat Detail URL\"]=threatDetailURL_s, [\"Download Report (HTML)\"]=ReportDownload_HTML__s, [\"Download Report (PDF)\"]=ReportDownload_PDF__s, [\"Executive Summary\"]=executiveSummary_s",
               "size": 0,
               "showAnalytics": true,
               "title": "Cofense Intelligence Threat Indicators Data",
@@ -265,14 +265,16 @@
                     "columnMatch": "Download Report (HTML)",
                     "formatter": 7,
                     "formatOptions": {
-                      "linkTarget": "Url"
+                      "linkTarget": "Url",
+                      "linkLabel": "Download HTML Report"
                     }
                   },
                   {
                     "columnMatch": "Download Report (PDF)",
                     "formatter": 7,
                     "formatOptions": {
-                      "linkTarget": "Url"
+                      "linkTarget": "Url",
+                      "linkLabel": "Download PDF Report"
                     }
                   },
                   {
