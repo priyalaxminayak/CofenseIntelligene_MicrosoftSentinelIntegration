@@ -306,7 +306,7 @@
                         "Malware_Data_Table_name": "[parameters('Malware_Data_Table_name')]",
                         "Schedule": "[parameters('Schedule')]",
                         "LogLevel": "[parameters('LogLevel')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "<--Provide Zip File Path-->"
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/blob/main/DataConnector-CofenseIntelligence-ms-sentinel-D-1.0.0-24.zip?raw=true"
                     }
                 }
             ]
