@@ -54,7 +54,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Tenable%20Vulnerability%20Management/Playbooks/TenablePlatformConnector/azuredeploy.json"
+                    "uri": "https://github.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/blob/main/TenablePlatformConnector.json?raw=true"
                 },
                 "parameters": {
                     "ConnectorName": {
@@ -70,7 +70,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Tenable%20Vulnerability%20Management/Playbooks/TenableVulnerabilityManagementConnector/azuredeploy.json"
+                    "uri": "https://github.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/blob/main/TenableVulnerabilityManagementConnector.json?raw=true"
                 },
                 "parameters": {
                     "ConnectorName": {
@@ -87,7 +87,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Tenable%20Vulnerability%20Management/Playbooks/Playbooks/Tenable-EnrichIncidentWithAssetsInfo/azuredeploy.json"
+                    "uri": "https://github.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/blob/main/Tenable-EnrichIncidentWithAssetsInfo.json?raw=true"
                 },
                 "parameters": {
                     "PlaybookName": {
@@ -104,7 +104,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Tenable%20Vulnerability%20Management/Playbooks/Playbooks/Tenable-EnrichIncidentWithVulnInfo/azuredeploy.json"
+                    "uri": "https://github.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/blob/main/Tenable-EnrichIncidentWithVulnInfo.json?raw=true"
                 },
                 "parameters": {
                     "PlaybookName": {
@@ -123,7 +123,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Tenable%20Vulnerability%20Management/Playbooks/Playbooks/Tenable-LaunchScan/azuredeploy.json"
+                    "uri": "https://github.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/blob/main/Tenable-LaunchScan.json?raw=true"
                 },
                 "parameters": {
                     "PlaybookName": {
