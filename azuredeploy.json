@@ -54,7 +54,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://github.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/blob/main/TenablePlatformConnector.json?raw=true"
+                    "uri": "https://raw.githubusercontent.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/main/TenablePlatformConnector.json?token=GHSAT0AAAAAACRT2B3W6EDPYVREOCQESVRCZRSG5FA"
                 },
                 "parameters": {
                     "ConnectorName": {
@@ -70,7 +70,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://github.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/blob/main/TenableVulnerabilityManagementConnector.json?raw=true"
+                    "uri": "https://raw.githubusercontent.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/main/TenableVulnerabilityManagementConnector.json?token=GHSAT0AAAAAACRT2B3WNL4RI4TKN5EMMSVYZRSG5PQ"
                 },
                 "parameters": {
                     "ConnectorName": {
@@ -87,7 +87,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://github.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/blob/main/Tenable-EnrichIncidentWithAssetsInfo.json?raw=true"
+                    "uri": "https://raw.githubusercontent.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/main/Tenable-EnrichIncidentWithAssetsInfo.json?token=GHSAT0AAAAAACRT2B3WUTI73ZMX7RUYKR3UZRSG6WQ"
                 },
                 "parameters": {
                     "PlaybookName": {
@@ -104,7 +104,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://github.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/blob/main/Tenable-EnrichIncidentWithVulnInfo.json?raw=true"
+                    "uri": "https://raw.githubusercontent.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/main/Tenable-EnrichIncidentWithVulnInfo.json?token=GHSAT0AAAAAACRT2B3XKLXUZVYMKBNTSSECZRSG7GQ"
                 },
                 "parameters": {
                     "PlaybookName": {
@@ -123,7 +123,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://github.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/blob/main/Tenable-LaunchScan.json?raw=true"
+                    "uri": "https://raw.githubusercontent.com/priyalaxminayak/CofenseIntelligene_MicrosoftSentinelIntegration/main/Tenable-LaunchScan.json?token=GHSAT0AAAAAACRT2B3XVWM2RCVCPY2D5ZOIZRSG7TA"
                 },
                 "parameters": {
                     "PlaybookName": {
